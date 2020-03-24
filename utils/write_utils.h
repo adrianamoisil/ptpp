@@ -8,13 +8,14 @@
 
 namespace utils {
 
-// Writes a polynomial from the given file.
-// TODO: info about format
+// Writes a polynomial to the given file.
 void WriteToFile(const models::Polynomial& polynomial,
   const std::string& filename);
 
+// Writes a polynomial to standard output.
 void WriteToStdout(const models::Polynomial& polynomial);
 
+// Writes a vector to the given csv file.
 void WriteLineToCsvFile(const std::string& filename, 
   const std::vector<long long>& values);
 

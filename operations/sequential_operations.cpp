@@ -17,7 +17,7 @@ using namespace utils;
 Polynomial ComputeMultiplication(
   const Polynomial& first_polynomial, 
   const Polynomial& second_polynomial) {
-  // Return a null polynomial if any of the given two polynomials is null,
+  // Return a null polynomial if any of the given two polynomials is null.
   if (first_polynomial.IsNull() || second_polynomial.IsNull()) {
     return Polynomial();
   }
@@ -29,6 +29,8 @@ Polynomial ComputeMultiplication(
 
   Polynomial result;
   
+  // Multiply all the first polynomial's coefficients with the coefficients of
+  // the second one. Add the value to the result polynomial. 
   for (unsigned long long first_exponent = 0; first_exponent <= first_polynomial_degree; ++first_exponent) {
     for (unsigned long long second_exponent = 0; second_exponent <= second_polynomial_degree; ++second_exponent) {
       const unsigned long long exponent = first_exponent + second_exponent;

@@ -8,7 +8,6 @@
 namespace utils {
 
 // Reads a polynomial from the given file.
-// TODO: info about format
 models::Polynomial ReadFromFile(const std::string& filename);
 
 } // namespace utils 

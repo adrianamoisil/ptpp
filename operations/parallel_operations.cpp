@@ -28,12 +28,8 @@ Polynomial ComputePartialResult(
   
   unsigned long long count = 0;
   Polynomial partial_result;
-  // const unsigned long long first_exponent_initial_value = 
-  //   (start_position == 0 ? 0 * 1ULL : start_position - 1) / second_polynomial_degree;
   const unsigned long long first_exponent_initial_value = 
     start_position / (second_polynomial_degree + 1);
-  // const unsigned long long second_exponent_initial_value = 
-  //   (start_position == 0 ? 0 * 1ULL : start_position - 1) % second_polynomial_degree;
   const unsigned long long second_exponent_initial_value = 
     start_position % (second_polynomial_degree + 1);
 
@@ -81,7 +77,6 @@ Polynomial ComputeMultiplicationParent(
   const Polynomial& first_polynomial, 
   const Polynomial& second_polynomial,
   const unsigned int number_of_processes) {
-  // TODO: info
   // Total number of operations required to be done. One operation represents
   // the multiplications of two coefficients. This means that, in order to 
   // compute the multiplication result of two polyinomials, there will be 

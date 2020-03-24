@@ -8,8 +8,6 @@ namespace models {
 
 class Polynomial {
 public:
-  // Polynomial(const std::map<unsigned long long, long long>& coefficients = {}) :
-  //   coefficients_(coefficients) {}
   Polynomial(const std::vector<long long>& coefficients = {}) :
     coefficients_(coefficients) {}
 
@@ -30,7 +28,6 @@ public:
   const void* GetCoefficientsPointer() const;
 
 private:
-  // std::map<unsigned long long, long long> coefficients_;
   std::vector<long long> coefficients_;
 };
 
