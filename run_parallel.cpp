@@ -19,21 +19,16 @@ using namespace std;
 using namespace utils;
 
 // The file containing the first polynomial.
-static const string first_polynomial_file =
-  "/home/adriana/Documents/uni/ppd2/src/data/first_polynomial.txt"; 
+static const string first_polynomial_file = "data/first_polynomial.txt"; 
 // The file containing the second polynomial.
-static const string second_polynomial_file =
-  "/home/adriana/Documents/uni/ppd2/src/data/second_polynomial.txt";
+static const string second_polynomial_file = "data/second_polynomial.txt";
 // The file where to write the result.
-static const string result_file =
-  "/home/adriana/Documents/uni/ppd2/src/results/parallel_result.txt";
+static const string result_file = "results/parallel_result.txt";
 // The file where to write the correct result used to check whether our approach
 // worked.
-static const string validator_result_file =
-  "/home/adriana/Documents/uni/ppd2/src/results/validator_result.txt";
+static const string validator_result_file = "results/validator_result.txt";
 // The csv file where to write the duration.
-static const string durations_file = 
-  "/home/adriana/Documents/uni/ppd2/src/results/parallel_duration.csv";
+static const string durations_file = "results/parallel_duration.csv";
 // The grade of the polynomials.
 static const long long maximum_exponent = 5;
 // The maximum coefficient of any grade of the polynomials.

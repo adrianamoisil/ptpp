@@ -18,17 +18,13 @@ using namespace std;
 using namespace utils;
 
 // The file containing the first polynomial.
-static const string first_polynomial_file =
-  "/home/adriana/Documents/uni/ppd2/src/data/first_polynomial.txt"; 
+static const string first_polynomial_file = "data/first_polynomial.txt"; 
 // The file containing the second polynomial.
-static const string second_polynomial_file =
-  "/home/adriana/Documents/uni/ppd2/src/data/second_polynomial.txt";
+static const string second_polynomial_file = "data/second_polynomial.txt";
 // The file where to write the result.
-static const string result_file =
-  "/home/adriana/Documents/uni/ppd2/src/results/sequential_result.txt";
+static const string result_file = "results/sequential_result.txt";
 // The csv file where to write the duration.
-static const string durations_file = 
-  "/home/adriana/Documents/uni/ppd2/src/results/sequential_duration.csv";
+static const string durations_file = "results/sequential_duration.csv";
 
 } // namespace
 

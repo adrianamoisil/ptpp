@@ -12,11 +12,9 @@ using namespace std;
 using namespace utils;
 
 // The file whete to write the first polynomial.
-static const string first_polynomial_file =
-  "/home/adriana/Documents/uni/ppd2/src/data/first_polynomial.txt"; 
+static const string first_polynomial_file = "data/first_polynomial.txt"; 
 // The file where to write the second polynomial.
-static const string second_polynomial_file =
-  "/home/adriana/Documents/uni/ppd2/src/data/second_polynomial.txt";
+static const string second_polynomial_file = "data/second_polynomial.txt";
 
 } // namespace
 
