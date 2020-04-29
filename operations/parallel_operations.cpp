@@ -21,6 +21,12 @@ Polynomial ComputePartialResult(
   const Polynomial& second_polynomial,
   const unsigned long long start_position,
   const unsigned long long number_of_operations) {
+  // In some cases, the number of processes is greater than the total number of
+  // operations (i.e. how many coefficients we have to multiply).
+  if (!number_of_operations) {
+    return Polynomial();
+  }
+
   const unsigned long long first_polynomial_degree = 
     first_polynomial.GetDegree();
   const unsigned long long second_polynomial_degree = 
